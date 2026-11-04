@@ -4,6 +4,8 @@ import { PageHeader, SectionHeading, PlaceholderNote } from "@/components/site/S
 import { CtaBand } from "@/components/site/CtaBand";
 import { IMAGES } from "@/content/images";
 import { DIFFERENTIATORS, FACILITIES, HISTORY, MISSION, PHILOSOPHY, VISION } from "@/content/school";
+
+const [classroom, reading] = FACILITIES as [(typeof FACILITIES)[number], (typeof FACILITIES)[number]];
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
@@ -84,16 +86,16 @@ function AboutPage() {
         <div className="container-page section-y grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="reveal grid grid-cols-2 gap-4">
             <img
-              src={FACILITIES[0].image}
-              alt={FACILITIES[0].imageAlt}
+              src={classroom.image}
+              alt={classroom.imageAlt}
               loading="lazy"
               width={1200}
               height={912}
               className="aspect-[3/4] w-full rounded-3xl object-cover"
             />
             <img
-              src={FACILITIES[1].image}
-              alt={FACILITIES[1].imageAlt}
+              src={reading.image}
+              alt={reading.imageAlt}
               loading="lazy"
               width={1200}
               height={912}

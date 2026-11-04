@@ -15,17 +15,19 @@ import { cn } from "@/lib/utils";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 type Kind = "registration" | "contact";
-type Values = Record<string, string>;
-type Errors = Partial<Record<string, string>>;
+type Values = { name: string; phone: string; age: string; program: string; subject: string; message: string };
+type Errors = Partial<Record<keyof Values | string, string>>;
 
 const INITIAL: Record<Kind, Values> = {
-  registration: { name: "", phone: "", age: "", program: "", message: "" },
-  contact: { name: "", phone: "", subject: "", message: "" },
+  registration: { name: "", phone: "", age: "", program: "", subject: "", message: "" },
+  contact: { name: "", phone: "", age: "", program: "", subject: "", message: "" },
 };
 
 function validate(kind: Kind, values: Values) {
-  const schema = kind === "registration" ? registrationSchema : contactSchema;
-  const result = schema.safeParse(values);
+  const result =
+    kind === "registration"
+      ? registrationSchema.safeParse(values)
+      : contactSchema.safeParse(values);
   if (result.success) return { ok: true as const, data: result.data, errors: {} };
   const errors: Errors = {};
   for (const issue of result.error.issues) {
@@ -35,7 +37,7 @@ function validate(kind: Kind, values: Values) {
   return { ok: false as const, errors };
 }
 
-export function InquiryForm({ kind, defaultProgram }: { kind: Kind; defaultProgram?: string }) {
+export function InquiryForm({ kind, defaultProgram }: { kind: Kind; defaultProgram?: string | undefined }) {
   const formId = useId();
   const [values, setValues] = useState<Values>(() => ({
     ...INITIAL[kind],
@@ -45,7 +47,7 @@ export function InquiryForm({ kind, defaultProgram }: { kind: Kind; defaultProgr
   const [submitted, setSubmitted] = useState(false);
   const [success, setSuccess] = useState<{ name: string; message: string } | null>(null);
 
-  const set = (key: string, value: string) => {
+  const set = (key: keyof Values, value: string) => {
     const next = { ...values, [key]: value };
     setValues(next);
     if (submitted) setErrors(validate(kind, next).errors);
@@ -101,7 +103,7 @@ export function InquiryForm({ kind, defaultProgram }: { kind: Kind; defaultProgr
     );
   }
 
-  const field = (key: string) => ({
+  const field = (key: keyof Values) => ({
     id: `${formId}-${key}`,
     name: key,
     value: values[key],
@@ -247,9 +249,9 @@ function Field({
 }: {
   label: string;
   htmlFor: string;
-  error?: string;
+  error?: string | undefined;
   errorId: string;
-  className?: string;
+  className?: string | undefined;
   children: ReactNode;
 }) {
   return (
