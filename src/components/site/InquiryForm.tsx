@@ -16,7 +16,7 @@ import { WhatsAppButton } from "./WhatsAppButton";
 
 type Kind = "registration" | "contact";
 type Values = { name: string; phone: string; age: string; program: string; subject: string; message: string };
-type Errors = Partial<Record<keyof Values | string, string>>;
+type Errors = Partial<Record<keyof Values, string>>;
 
 const INITIAL: Record<Kind, Values> = {
   registration: { name: "", phone: "", age: "", program: "", subject: "", message: "" },
@@ -31,7 +31,7 @@ function validate(kind: Kind, values: Values) {
   if (result.success) return { ok: true as const, data: result.data, errors: {} };
   const errors: Errors = {};
   for (const issue of result.error.issues) {
-    const key = String(issue.path[0]);
+    const key = String(issue.path[0]) as keyof Values;
     if (!errors[key]) errors[key] = issue.message;
   }
   return { ok: false as const, errors };
