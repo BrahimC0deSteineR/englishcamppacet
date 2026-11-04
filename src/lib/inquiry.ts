@@ -17,11 +17,17 @@ export const registrationSchema = z.object({
     .min(2, "Please enter the parent or student name")
     .max(100, "Name is too long"),
   phone: phoneSchema,
-  age: z.coerce
-    .number({ invalid_type_error: "Please enter the student's age" })
-    .int("Age should be a whole number")
-    .min(4, "Student age should be between 4 and 80")
-    .max(80, "Student age should be between 4 and 80"),
+  age: z.preprocess(
+    (v) => (typeof v === "string" && v.trim() === "" ? undefined : v),
+    z.coerce
+      .number({
+        required_error: "Please enter the student's age",
+        invalid_type_error: "Please enter the student's age as a number",
+      })
+      .int("Age should be a whole number")
+      .min(4, "Student age should be between 4 and 80")
+      .max(80, "Student age should be between 4 and 80"),
+  ),
   program: z.string().trim().min(1, "Please choose a program"),
   message: z.string().trim().max(1000, "Message is too long (max 1000 characters)").optional(),
 });
