@@ -56,3 +56,11 @@ describe("WhatsApp link", () => {
     expect(msg).toContain("Interested program: English for Kids");
   });
 });
+
+describe("student age message", () => {
+  it("asks for the age when left empty", () => {
+    const res = registrationSchema.safeParse({ ...valid, age: "" });
+    expect(res.success).toBe(false);
+    expect(res.success ? "" : res.error.issues[0]?.message).toBe("Please enter the student's age");
+  });
+});
