@@ -176,7 +176,7 @@ export function InquiryForm({ kind, defaultProgram }: { kind: Kind; defaultProgr
               <select
                 {...field("program")}
                 className={cn(
-                  "flex w-full appearance-none rounded-xl border border-input bg-background bg-[length:16px] bg-[right_1rem_center] bg-no-repeat px-4 text-base outline-none focus-visible:ring-2 focus-visible:ring-ring aria-[invalid=true]:border-destructive",
+                  "flex w-full rounded-xl border border-input bg-background px-4 text-base outline-none focus-visible:ring-2 focus-visible:ring-ring aria-[invalid=true]:border-destructive",
                   "h-12",
                   !values.program && "text-muted-foreground",
                 )}
