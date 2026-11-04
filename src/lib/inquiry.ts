@@ -18,8 +18,11 @@ export const registrationSchema = z.object({
     .max(100, "Name is too long"),
   phone: phoneSchema,
   age: z.preprocess(
-    (v) => (typeof v === "string" && v.trim() === "" ? undefined : v),
-    z.coerce
+    (v) => {
+      if (v === undefined || v === null || (typeof v === "string" && v.trim() === "")) return undefined;
+      return Number(v);
+    },
+    z
       .number({
         required_error: "Please enter the student's age",
         invalid_type_error: "Please enter the student's age as a number",
