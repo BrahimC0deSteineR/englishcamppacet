@@ -69,11 +69,11 @@ function Hero() {
     <section className="relative overflow-hidden bg-background">
       <div className="container-page relative grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
         <div className="rise-in">
-          <div className="relative">
+          <div className="relative isolate">
             {/* Soft highland backdrop, ending just below the action buttons */}
             <div
               aria-hidden
-              className="pointer-events-none absolute -inset-x-[100vw] -top-40 -bottom-8"
+              className="pointer-events-none absolute -inset-x-[100vw] -top-40 -bottom-8 -z-10"
               style={{
                 maskImage: "linear-gradient(to bottom, black 0%, black 88%, transparent 100%)",
                 WebkitMaskImage:
