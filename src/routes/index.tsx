@@ -67,25 +67,6 @@ function HomePage() {
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-background">
-      {/* Soft highland backdrop behind the opening headline */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          maskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 86%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 86%)",
-        }}
-      >
-        <img
-          src={IMAGES.heroBackdrop}
-          alt=""
-          width={1920}
-          height={1088}
-          fetchPriority="high"
-          className="h-full w-full object-cover object-center opacity-90"
-        />
-      </div>
-
       <div className="container-page relative grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
         <div className="rise-in">
           <p className="eyebrow text-primary/70">
