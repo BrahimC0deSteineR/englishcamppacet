@@ -72,8 +72,8 @@ function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          maskImage: "linear-gradient(to bottom, black 0%, black 42%, transparent 88%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 42%, transparent 88%)",
+          maskImage: "linear-gradient(to bottom, black 0%, black 68%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 68%, transparent 100%)",
         }}
       >
         <img
@@ -82,9 +82,8 @@ function Hero() {
           width={1920}
           height={1088}
           fetchPriority="high"
-          className="h-full w-full object-cover object-center opacity-60"
+          className="h-full w-full object-cover object-center opacity-90"
         />
-        <div className="absolute inset-0 bg-background/20" />
       </div>
 
       <div className="container-page relative grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
