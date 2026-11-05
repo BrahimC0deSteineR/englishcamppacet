@@ -72,8 +72,8 @@ function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          maskImage: "linear-gradient(to bottom, black 0%, black 68%, transparent 100%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 68%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 86%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 86%)",
         }}
       >
         <img
