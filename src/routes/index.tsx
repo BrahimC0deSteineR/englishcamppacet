@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Check, Quote } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SectionHeading, PlaceholderNote } from "@/components/site/Section";
+import { SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { GalleryGrid } from "@/components/site/GalleryGrid";
 import { NewsCard } from "@/components/site/NewsCard";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { IMAGES } from "@/content/images";
 import { PROGRAMS } from "@/content/programs";
-import { FACILITIES, INTRO, TESTIMONIALS, WHY_CHOOSE } from "@/content/school";
+import { FACILITIES, INTRO, WHY_CHOOSE } from "@/content/school";
 import { GALLERY } from "@/content/gallery";
 import { NEWS_SORTED } from "@/content/news";
 import { FULL_ADDRESS, SITE } from "@/config/site";
@@ -58,7 +58,6 @@ function HomePage() {
       <WhyChoose />
       <Facilities />
       <GalleryPreview />
-      <Testimonials />
       <NewsPreview />
       <CtaBand />
     </>
@@ -68,7 +67,27 @@ function HomePage() {
 function Hero() {
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="container-page grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
+      {/* Soft highland backdrop behind the opening headline */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          maskImage: "linear-gradient(to bottom, black 0%, black 42%, transparent 88%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 42%, transparent 88%)",
+        }}
+      >
+        <img
+          src={IMAGES.heroBackdrop}
+          alt=""
+          width={1920}
+          height={1088}
+          fetchPriority="high"
+          className="h-full w-full object-cover object-center opacity-60"
+        />
+        <div className="absolute inset-0 bg-background/20" />
+      </div>
+
+      <div className="container-page relative grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
         <div className="rise-in">
           <p className="eyebrow text-primary/70">
             <span aria-hidden className="h-px w-6 bg-accent" />
@@ -300,38 +319,6 @@ function GalleryPreview() {
         </div>
         <GalleryGrid items={GALLERY} showFilters={false} limit={6} />
       </div>
-    </section>
-  );
-}
-
-function Testimonials() {
-  return (
-    <section className="container-page section-y">
-      <SectionHeading
-        eyebrow="Testimonials"
-        title="What our community says"
-        align="center"
-      />
-      <div className="reveal mt-5 flex justify-center">
-        <PlaceholderNote>Placeholder quotes — replace with real, approved testimonials</PlaceholderNote>
-      </div>
-      <ul className="mt-12 grid gap-6 md:grid-cols-3">
-        {TESTIMONIALS.map((t, i) => (
-          <li
-            key={i}
-            className="reveal flex flex-col rounded-3xl border border-border bg-card p-8 shadow-soft"
-          >
-            <Quote className="size-8 text-accent" />
-            <blockquote className="mt-5 flex-1 font-display text-lg leading-relaxed text-primary">
-              “{t.quote}”
-            </blockquote>
-            <div className="mt-6 border-t border-border pt-5">
-              <p className="font-semibold text-primary">{t.name}</p>
-              <p className="text-sm text-muted-foreground">{t.role}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }
