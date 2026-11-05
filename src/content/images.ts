@@ -1,6 +1,7 @@
 // Temporary photography. Replace files in src/assets with real school photos
 // (keep the same file names) and every page updates automatically.
 import heroStudents from "@/assets/hero-students.jpg";
+import heroBackdrop from "@/assets/hero-backdrop.jpg";
 import programKids from "@/assets/program-kids.jpg";
 import programTeens from "@/assets/program-teens.jpg";
 import programAdults from "@/assets/program-adults.jpg";
@@ -15,6 +16,7 @@ import teacher3 from "@/assets/teacher-3.jpg";
 
 export const IMAGES = {
   heroStudents,
+  heroBackdrop,
   programKids,
   programTeens,
   programAdults,

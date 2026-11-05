@@ -174,24 +174,3 @@ export const FAQS = [
   },
 ];
 
-/** Testimonials — replace with real, approved quotes from students or parents. */
-export const TESTIMONIALS = [
-  {
-    quote:
-      "[Testimonial placeholder] Add a real quote from a parent about their child's progress and confidence.",
-    name: "[Parent name]",
-    role: "Parent of a student",
-  },
-  {
-    quote:
-      "[Testimonial placeholder] Add a real quote from a student about their favourite activity or what they learned.",
-    name: "[Student name]",
-    role: "Student",
-  },
-  {
-    quote:
-      "[Testimonial placeholder] Add a real quote from a school or group that joined an English camp program.",
-    name: "[Name, school or group]",
-    role: "Group program participant",
-  },
-];
