@@ -69,31 +69,54 @@ function Hero() {
     <section className="relative overflow-hidden bg-background">
       <div className="container-page relative grid items-center gap-12 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
         <div className="rise-in">
-          <p className="eyebrow text-primary/70">
-            <span aria-hidden className="h-px w-6 bg-accent" />
-            English school in Pacet, Mojokerto
-          </p>
-          <h1 className="mt-6 text-[2.75rem] font-medium leading-[1.02] text-primary sm:text-6xl lg:text-7xl">
-            Learn English.
-            <br />
-            <span className="marker">Build Confidence.</span>
-            <br />
-            <em className="font-normal italic text-primary/80">Explore Your Future.</em>
-          </h1>
-          <p className="mt-7 max-w-lg text-lg leading-relaxed text-muted-foreground">
-            A friendly English learning school in the cool highlands of East Java — where
-            children, teens and adults learn to speak English with confidence.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <Button asChild size="lg">
-              <Link to="/programs">
-                Explore Programs <ArrowRight />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link to="/contact">Contact Us</Link>
-            </Button>
+          <div className="relative">
+            {/* Soft highland backdrop, ending just below the action buttons */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-x-[100vw] -top-40 -bottom-8"
+              style={{
+                maskImage: "linear-gradient(to bottom, black 0%, black 88%, transparent 100%)",
+                WebkitMaskImage:
+                  "linear-gradient(to bottom, black 0%, black 88%, transparent 100%)",
+              }}
+            >
+              <img
+                src={IMAGES.heroBackdrop}
+                alt=""
+                width={1920}
+                height={1088}
+                fetchPriority="high"
+                className="h-full w-full object-cover object-center opacity-90"
+              />
+            </div>
+
+            <p className="eyebrow text-primary/70">
+              <span aria-hidden className="h-px w-6 bg-accent" />
+              English school in Pacet, Mojokerto
+            </p>
+            <h1 className="mt-6 text-[2.75rem] font-medium leading-[1.02] text-primary sm:text-6xl lg:text-7xl">
+              Learn English.
+              <br />
+              <span className="marker">Build Confidence.</span>
+              <br />
+              <em className="font-normal italic text-primary/80">Explore Your Future.</em>
+            </h1>
+            <p className="mt-7 max-w-lg text-lg leading-relaxed text-muted-foreground">
+              A friendly English learning school in the cool highlands of East Java — where
+              children, teens and adults learn to speak English with confidence.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button asChild size="lg">
+                <Link to="/programs">
+                  Explore Programs <ArrowRight />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link to="/contact">Contact Us</Link>
+              </Button>
+            </div>
           </div>
+
           <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-primary">
             {["Kids, teens & adults", "Speaking-focused", "Camp-style learning"].map((t) => (
               <li key={t} className="flex items-center gap-2">
