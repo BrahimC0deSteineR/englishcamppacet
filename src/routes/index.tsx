@@ -113,7 +113,7 @@ function Hero() {
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
-          <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-primary/80">
+          <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-primary">
             {["Kids, teens & adults", "Speaking-focused", "Camp-style learning"].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <span className="grid size-5 place-items-center rounded-full bg-accent text-accent-foreground">
