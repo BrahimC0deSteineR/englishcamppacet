@@ -88,6 +88,7 @@ function Hero() {
                 fetchPriority="high"
                 className="h-full w-full object-cover object-center opacity-90"
               />
+              <div className="absolute inset-0 bg-background/30" />
             </div>
 
             <p className="eyebrow text-primary/70">
