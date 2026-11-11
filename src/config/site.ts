@@ -23,7 +23,7 @@ export const SITE = {
   country: "Indonesia",
   postalCode: "",
   /** Opening hours text, e.g. "Mon–Sat, 08:00–17:00". */
-  openingHours: "",
+  openingHours: "Monday–Friday, 08:00–16:00",
 
   /** Google Maps embed URL. Replace with the school's exact pin when available. */
   mapEmbedUrl: "https://www.google.com/maps?q=Jl.+Raya+Pacet+No.339,+Petak,+Pacet,+Mojokerto&output=embed",
