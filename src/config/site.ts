@@ -9,20 +9,24 @@ export const SITE = {
   locale: "en_US",
 
   /** WhatsApp number in international format, digits only, e.g. "62812xxxxxxx". */
-  whatsappNumber: "",
+  whatsappNumber: "6281330772949",
   /** Public email address, e.g. "hello@englishcamppacet.com". */
   email: "",
   /** Full street address once confirmed. The area below is shown until then. */
-  streetAddress: "",
+  streetAddress: "Jl. Raya Pacet No.339, Petak",
+  /** Landmark shown under the address. */
+  landmark: "Sebelah TK Dharma Wanita Petak",
   locality: "Pacet",
   region: "Mojokerto, East Java",
+  /** Local phone format shown to visitors. */
+  phoneDisplay: "0813-3077-2949",
   country: "Indonesia",
   postalCode: "",
   /** Opening hours text, e.g. "Mon–Sat, 08:00–17:00". */
   openingHours: "",
 
   /** Google Maps embed URL. Replace with the school's exact pin when available. */
-  mapEmbedUrl: "https://www.google.com/maps?q=Pacet,+Mojokerto,+East+Java,+Indonesia&output=embed",
+  mapEmbedUrl: "https://www.google.com/maps?q=Jl.+Raya+Pacet+No.339,+Petak,+Pacet,+Mojokerto&output=embed",
 
   social: {
     instagram: "",
