@@ -6,7 +6,7 @@ const valid = {
   name: "Siti Rahma",
   phone: "+62 812 3456 7890",
   age: "12",
-  program: "English for Kids",
+  program: "English Camp — 2 Days 1 Night",
   message: "",
 };
 
@@ -53,7 +53,7 @@ describe("WhatsApp link", () => {
     const data = registrationSchema.parse(valid);
     const msg = formatRegistrationMessage(data);
     expect(msg).toContain("Student age: 12");
-    expect(msg).toContain("Interested program: English for Kids");
+    expect(msg).toContain("Interested program: English Camp — 2 Days 1 Night");
   });
 });
 

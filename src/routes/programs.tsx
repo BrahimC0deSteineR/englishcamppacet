@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, Sparkles, Target, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PageHeader, PlaceholderNote } from "@/components/site/Section";
+import { PageHeader } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { PROGRAMS } from "@/content/programs";
+import { CAMP, CAMP_GOALS, CHARACTER_VALUES, INCLUDED, RUNDOWN, SPECIAL_FEATURES } from "@/content/camp";
 import { pageHead } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
@@ -31,7 +32,9 @@ function ProgramsPage() {
         }
         description="Every program focuses on real communication — so learners don't just know English, they use it."
       >
-        <PlaceholderNote>Sample program details — official information coming soon</PlaceholderNote>
+        <p className="font-semibold text-primary">
+          {CAMP.name} · {CAMP.duration}
+        </p>
       </PageHeader>
 
       <nav aria-label="Programs" className="sticky top-[4.5rem] z-30 border-b border-border bg-background/90 backdrop-blur-md">
@@ -131,7 +134,7 @@ function ProgramsPage() {
                   message={`Hello English Camp! I would like more information about the ${p.title} program.`}
                 />
                 <Button asChild variant="outline">
-                  <Link to="/admissions" search={{ program: p.title }}>
+                  <Link to="/admissions" search={{ program: "English Camp — 2 Days 1 Night" }}>
                     Register interest
                   </Link>
                 </Button>
@@ -140,6 +143,57 @@ function ProgramsPage() {
           </article>
         ))}
       </div>
+
+      <section id="rundown" className="bg-secondary section-y">
+        <div className="container-page">
+          <p className="eyebrow text-primary/60">{CAMP.duration}</p>
+          <h2 className="mt-3 text-4xl font-medium text-primary sm:text-5xl">Program rundown</h2>
+          <p className="mt-2 font-display text-xl italic text-primary/70">"{CAMP.motto}"</p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {RUNDOWN.map((d) => (
+              <div key={d.day} className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+                <h3 className="text-2xl font-medium text-primary">{d.day}</h3>
+                <ol className="mt-4 divide-y divide-border">
+                  {d.items.map((it) => (
+                    <li key={d.day + it.time + it.title} className="grid grid-cols-[7.5rem_1fr] gap-3 py-2.5 text-sm">
+                      <span className="font-semibold tabular-nums text-primary">{it.time}</span>
+                      <span>
+                        <span className="font-semibold text-primary">{it.title}</span>
+                        {it.detail && <span className="block text-muted-foreground">{it.detail}</span>}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            {[
+              { title: "Our goals", list: CAMP_GOALS },
+              { title: "What's included", list: INCLUDED },
+              { title: "Special features", list: SPECIAL_FEATURES },
+            ].map((b) => (
+              <div key={b.title} className="rounded-3xl border border-border bg-card p-6">
+                <h3 className="text-lg font-medium text-primary">{b.title}</h3>
+                <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
+                  {b.list.map((x) => (
+                    <li key={x} className="flex gap-2.5">
+                      <Check className="mt-0.5 size-4 shrink-0 text-success" strokeWidth={2.5} />
+                      {x}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            <span className="mr-2 self-center font-semibold text-primary">Character building:</span>
+            {CHARACTER_VALUES.map((v) => (
+              <span key={v} className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-accent-foreground">{v}</span>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <CtaBand
         title="Not sure which program fits?"
