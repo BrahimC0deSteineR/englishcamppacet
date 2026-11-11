@@ -27,7 +27,6 @@ export const NEWS: NewsPost[] = [
     title: "FunTasticEnglishPacet English Camp — 2 Days 1 Night",
     category: "Event",
     date: "2026-11-08",
-    eventDate: "[Date to be confirmed]",
     location: "Jl. Raya Pacet No.339, Petak, Pacet, Mojokerto",
     excerpt:
       "Learn English, make friends, explore nature, build character. Registration is open — limited seats!",
