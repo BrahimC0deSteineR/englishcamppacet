@@ -1,8 +1,8 @@
 import { IMAGES } from "./images";
 
 /**
- * SAMPLE PROGRAMS — editable placeholders until the school provides official details.
- * No prices or course durations are listed on purpose.
+ * Program parts of the FunTasticEnglishPacet English Camp (2 Days 1 Night),
+ * taken from the school's official flyer. No prices are listed on purpose.
  */
 export type Program = {
   slug: string;
@@ -17,99 +17,98 @@ export type Program = {
   imageAlt: string;
 };
 
+const AUDIENCE = "English Camp participants";
+const LEVEL = "Part of the 2 Days 1 Night camp";
+
 export const PROGRAMS: Program[] = [
   {
-    slug: "english-for-kids",
-    title: "English for Kids",
-    tagline: "Playful first steps into English",
-    audience: "Young learners (age range to be confirmed)",
-    level: "Beginner",
+    slug: "english-classes",
+    title: "English Classes",
+    tagline: "Speaking, listening, reading & writing",
+    audience: AUDIENCE,
+    level: LEVEL,
     description:
-      "A warm, playful introduction to English through songs, stories, games and picture cards. Children build everyday vocabulary and the confidence to speak without fear of mistakes.",
+      "Four English classes across the two days, moving from speaking and listening to reading, vocabulary, conversation, role play and team challenges.",
     objectives: [
-      "Recognise and use everyday English words",
-      "Understand simple instructions and questions",
-      "Introduce themselves and talk about family, school and hobbies",
-      "Enjoy English through stories and songs",
+      "Build confidence in speaking English",
+      "Improve listening, reading & writing skills",
+      "Practise conversation through role play",
     ],
     highlights: [
-      "Small, friendly groups",
-      "Games, songs and storytelling",
-      "Picture cards and hands-on activities",
-      "Progress updates for parents",
-    ],
-    image: IMAGES.programKids,
-    imageAlt: "Young children holding English flashcards with their teacher at a wooden table",
-  },
-  {
-    slug: "english-for-teens",
-    title: "English for Teens",
-    tagline: "Speak up, think clearly, present with confidence",
-    audience: "Junior and senior high school students",
-    level: "Elementary to intermediate",
-    description:
-      "Builds grammar, vocabulary and fluency together, with plenty of speaking practice. Students learn to express opinions, work in teams and present ideas in English.",
-    objectives: [
-      "Strengthen grammar and vocabulary for school and daily life",
-      "Speak more fluently in discussions",
-      "Give short presentations in English",
-      "Improve reading and listening comprehension",
-    ],
-    highlights: [
-      "Discussion and debate practice",
-      "Presentation and public speaking",
-      "Project-based group work",
-      "Support for school English lessons",
+      "Class 1: Speaking & Listening",
+      "Class 2: Reading & Vocabulary",
+      "Class 3: Conversation & Role Play",
+      "Class 4: Games & Team Challenge",
     ],
     image: IMAGES.programTeens,
-    imageAlt: "A teenage student giving a confident presentation in English to classmates",
+    imageAlt: "Students practising English together in class",
   },
   {
-    slug: "conversation-club",
-    title: "Conversation Club",
-    tagline: "Real conversations, real confidence",
-    audience: "Teens, university students and adults",
-    level: "All levels",
+    slug: "traditional-culture",
+    title: "Traditional Art, Culture & Cooking",
+    tagline: "Live like a local",
+    audience: AUDIENCE,
+    level: LEVEL,
     description:
-      "Relaxed, guided conversation sessions focused on speaking and listening. Ideal for learners who understand English but want to speak naturally and confidently.",
+      "Participants cook traditional food (nasi liwet, jadah, getuk, klepon, wedang jahe), paint batik, play angklung and learn traditional dance and crafts.",
     objectives: [
-      "Speak more naturally in everyday situations",
-      "Improve pronunciation and listening",
-      "Expand practical vocabulary and expressions",
-      "Overcome shyness when speaking English",
+      "Learn about local Indonesian culture",
+      "Create your own batik and crafts",
+      "Cook and taste traditional food together",
     ],
     highlights: [
-      "Topic-based guided conversations",
-      "Pronunciation coaching",
-      "Role-plays for real-life situations",
-      "Indoor and outdoor sessions",
+      "Traditional Cooking Class",
+      "Batik painting & angklung",
+      "Traditional dance & handicraft",
+      "Cooking competition",
     ],
-    image: IMAGES.programAdults,
-    imageAlt: "Young adults laughing during an outdoor English conversation session in the hills",
+    image: IMAGES.programKids,
+    imageAlt: "Children working together on a hands-on activity",
   },
   {
-    slug: "english-camp-immersion",
-    title: "English Camp Immersion",
-    tagline: "Learn English by living it",
-    audience: "School groups, communities and holiday participants",
-    level: "All levels",
+    slug: "outdoor-adventure",
+    title: "Outdoor Adventure & Traditional Games",
+    tagline: "Explore nature around Pacet",
+    audience: AUDIENCE,
+    level: LEVEL,
     description:
-      "An immersive camp experience in the cool highlands of Pacet. Participants use English throughout outdoor games, teamwork challenges, presentations and evening activities.",
+      "Trekking, nature exploration, river fun and plant & animal discovery, plus traditional games like engklek, lompat tali, gobak sodor, ular naga, egrang and bakiak.",
     objectives: [
-      "Use English naturally throughout the day",
-      "Build teamwork and leadership skills",
-      "Gain confidence speaking in front of a group",
-      "Create memorable learning experiences",
+      "Explore nature and local flora & fauna",
+      "Build teamwork through games",
+      "Stay fresh and active",
     ],
     highlights: [
-      "Outdoor learning games",
-      "Team challenges and presentations",
-      "Evening activities and campfire sharing",
-      "Programs for school groups on request",
+      "Tracking & nature exploration",
+      "Traditional games",
+      "Team games & challenges",
+      "Morning exercise",
     ],
     image: IMAGES.activityOutdoor,
-    imageAlt: "Students playing an outdoor English vocabulary game on a grassy field near the mountains",
+    imageAlt: "Students playing games outdoors near the mountains",
+  },
+  {
+    slug: "character-and-evening-fun",
+    title: "Character Building & Evening Fun",
+    tagline: "Friendship lasts forever",
+    audience: AUDIENCE,
+    level: LEVEL,
+    description:
+      "Campfire storytelling and sing-along, a talent show, an English movie night with discussion and a photo challenge — building confidence, teamwork, responsibility, creativity, kindness and leadership.",
+    objectives: [
+      "Develop character, leadership and teamwork",
+      "Make new friends",
+      "Create unforgettable memories",
+    ],
+    highlights: [
+      "Dinner & campfire",
+      "Talent show",
+      "Movie night (English movie & discussion)",
+      "Farewell, certificate & souvenir",
+    ],
+    image: IMAGES.activityCampfire,
+    imageAlt: "Students sitting around a campfire in the evening",
   },
 ];
 
-export const PROGRAM_OPTIONS = [...PROGRAMS.map((p) => p.title), "Not sure yet — please advise"];
+export const PROGRAM_OPTIONS = ["English Camp — 2 Days 1 Night", "Not sure yet — please advise"];

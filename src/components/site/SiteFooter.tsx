@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock, Phone } from "lucide-react";
 import { FULL_ADDRESS, NAV_LINKS, SITE } from "@/config/site";
 import { PROGRAMS } from "@/content/programs";
 import { Logo } from "./Logo";
@@ -54,7 +54,11 @@ export function SiteFooter() {
           <ul className="mt-5 space-y-4 text-sm text-primary-foreground/80">
             <li className="flex gap-3">
               <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
-              <address className="not-italic">{FULL_ADDRESS}</address>
+              <address className="not-italic">{FULL_ADDRESS}<br />({SITE.landmark})</address>
+            </li>
+            <li className="flex gap-3">
+              <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
+              <a href={`tel:+${SITE.whatsappNumber}`} className="hover:text-accent">Telp/WA {SITE.phoneDisplay}</a>
             </li>
             <li className="flex gap-3">
               <Mail className="mt-0.5 size-4 shrink-0 text-accent" />

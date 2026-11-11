@@ -38,13 +38,14 @@ function ContactPage() {
         <div className="space-y-4">
           <ContactCard icon={<WhatsAppIcon className="size-5" />} title="WhatsApp">
             {SITE.whatsappNumber ? (
-              <span>+{SITE.whatsappNumber}</span>
+              <span>{SITE.phoneDisplay}</span>
             ) : (
               <PlaceholderNote>Number to be added</PlaceholderNote>
             )}
           </ContactCard>
           <ContactCard icon={<MapPin className="size-5" />} title="Address">
             <address className="not-italic">{FULL_ADDRESS}</address>
+            <p className="mt-1 text-sm">({SITE.landmark})</p>
           </ContactCard>
           <ContactCard icon={<Mail className="size-5" />} title="Email">
             {SITE.email ? (
@@ -75,7 +76,7 @@ function ContactPage() {
       <section className="container-page pb-20 lg:pb-28">
         <div className="reveal overflow-hidden rounded-4xl border border-border shadow-soft">
           <iframe
-            title="Map showing Pacet, Mojokerto, East Java"
+            title="Map showing English Camp, Jl. Raya Pacet No.339, Petak"
             src={SITE.mapEmbedUrl}
             className="h-[420px] w-full"
             loading="lazy"
@@ -83,7 +84,7 @@ function ContactPage() {
           />
         </div>
         <p className="mt-3 text-xs text-muted-foreground">
-          Map shows the Pacet area. The school's exact location pin will be added soon.
+          Jl. Raya Pacet No.339, Petak — next to TK Dharma Wanita Petak.
         </p>
       </section>
     </>
