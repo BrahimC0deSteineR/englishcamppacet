@@ -28,4 +28,11 @@ export const GALLERY: GalleryItem[] = [
   { src: IMAGES.campGroupWide, alt: "Wide shot of the camp group with the banner in front of the wooden meeting hall", caption: "The whole camp family", category: "Events", ratio: "16/9" },
   { src: IMAGES.campGroupEntrance, alt: "Camp group at the pavilion entrance with hanging lanterns", caption: "At the pavilion entrance", category: "Events", ratio: "16/9" },
   { src: IMAGES.campGroupSunny, alt: "Camp group photo in the sunny courtyard", caption: "Sunny day at camp", category: "Events", ratio: "16/9" },
+  { src: IMAGES.campBrightClassWorkshop, alt: "Children at a creative workshop in a bright classroom", caption: "Creative workshop in a bright classroom", category: "Classroom" },
+  { src: IMAGES.campEcoWorkshopGroup, alt: "Happy group photo at the eco-creative workshop", caption: "Eco-creative workshop group", category: "Art & Culture" },
+  { src: IMAGES.campKitchenStrawberries, alt: "Fresh strawberries in a wooden kitchen", caption: "Strawberries ready for cooking class", category: "Cooking" },
+  { src: IMAGES.campKitchenFruit, alt: "Strawberries and bananas in a rustic kitchen", caption: "Fruit prep in the rustic kitchen", category: "Cooking" },
+  { src: IMAGES.campPicnicGirls, alt: "Four girls enjoying a cheerful picnic outdoors", caption: "Cheerful picnic time", category: "Outdoor" },
+  { src: IMAGES.campTeensDoorway, alt: "Four teenagers smiling in a doorway at camp", caption: "Camp friends", category: "Events" },
+  { src: IMAGES.campGroupShelter, alt: "Camp group photo under a rural shelter", caption: "Group photo under the shelter", category: "Events" },
 ];
