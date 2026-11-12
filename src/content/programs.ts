@@ -40,8 +40,8 @@ export const PROGRAMS: Program[] = [
       "Class 3: Conversation & Role Play",
       "Class 4: Games & Team Challenge",
     ],
-    image: IMAGES.programTeens,
-    imageAlt: "Students practising English together in class",
+    image: IMAGES.campEnglishClass,
+    imageAlt: "Children in a colourful English class with two camp instructors",
   },
   {
     slug: "traditional-culture",
@@ -62,8 +62,8 @@ export const PROGRAMS: Program[] = [
       "Traditional dance & handicraft",
       "Cooking competition",
     ],
-    image: IMAGES.programKids,
-    imageAlt: "Children working together on a hands-on activity",
+    image: IMAGES.campCookingClass,
+    imageAlt: "Smiling children in a cooking class in a rustic wooden kitchen",
   },
   {
     slug: "outdoor-adventure",
@@ -84,8 +84,8 @@ export const PROGRAMS: Program[] = [
       "Team games & challenges",
       "Morning exercise",
     ],
-    image: IMAGES.activityOutdoor,
-    imageAlt: "Students playing games outdoors near the mountains",
+    image: IMAGES.campFeedingTurtles,
+    imageAlt: "Children feeding turtles outdoors at the camp",
   },
   {
     slug: "character-and-evening-fun",

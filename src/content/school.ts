@@ -96,22 +96,22 @@ export const DIFFERENTIATORS = [
 
 export const FACILITIES = [
   {
-    title: "Bright classrooms",
-    body: "Comfortable, well-lit rooms for small-group learning.",
-    image: IMAGES.activityGroup,
-    imageAlt: "Students working together at round tables in a bright classroom with a mountain view",
+    title: "Colourful classrooms",
+    body: "Cheerful rooms for small-group English learning.",
+    image: IMAGES.campEnglishClass,
+    imageAlt: "Children in a colourful English class with two camp instructors",
   },
   {
-    title: "Reading corner",
-    body: "A calm space with English books to build reading habits.",
-    image: IMAGES.facilityLibrary,
-    imageAlt: "Teenagers reading English books on cushions beside large windows",
+    title: "Traditional kitchen",
+    body: "A rustic wooden kitchen for hands-on cooking classes.",
+    image: IMAGES.campKitchenAprons,
+    imageAlt: "Children in green aprons in a wooden kitchen",
   },
   {
     title: "Outdoor learning spaces",
     body: "Open-air areas for games, conversation and camp activities.",
-    image: IMAGES.facilityCampus,
-    imageAlt: "A welcoming learning centre building with a garden terrace and misty mountains behind",
+    image: IMAGES.campPaintingOutdoor,
+    imageAlt: "Children painting together outdoors",
   },
 ];
 

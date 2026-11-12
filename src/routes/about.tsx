@@ -30,7 +30,7 @@ function AboutPage() {
           </>
         }
         description="English Camp is an English learning school in Pacet, Mojokerto — a welcoming place where learners grow in language, confidence and character."
-        image={IMAGES.facilityCampus}
+        image={IMAGES.campGroupWide}
         imageAlt="English Camp learning space with a garden terrace and misty mountains"
       />
 

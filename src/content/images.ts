@@ -17,6 +17,18 @@ import teacher3 from "@/assets/teacher-3.jpg";
 import campGroupBanner from "@/assets/camp-group-banner.jpg.asset.json";
 import campGroupPendopo from "@/assets/camp-group-pendopo.jpg.asset.json";
 import campGroupSunny from "@/assets/camp-group-sunny.jpg.asset.json";
+import campBasketFloral from "@/assets/camp-basket-floral.webp.asset.json";
+import campCreativeWorkshop from "@/assets/camp-creative-workshop.webp.asset.json";
+import campEnglishClass from "@/assets/camp-english-class.webp.asset.json";
+import campFeedingTurtles from "@/assets/camp-feeding-turtles.webp.asset.json";
+import campCookingClass from "@/assets/camp-cooking-class.webp.asset.json";
+import campStrawberryKiosk from "@/assets/camp-strawberry-kiosk.webp.asset.json";
+import campKitchenAprons from "@/assets/camp-kitchen-aprons.webp.asset.json";
+import campPaintingHat from "@/assets/camp-painting-hat.webp.asset.json";
+import campPaintingOutdoor from "@/assets/camp-painting-outdoor.webp.asset.json";
+import campBasketBamboo from "@/assets/camp-basket-bamboo.webp.asset.json";
+import campGroupWide from "@/assets/camp-group-wide.png.asset.json";
+import campGroupEntrance from "@/assets/camp-group-entrance.png.asset.json";
 
 export const IMAGES = {
   heroStudents,
@@ -35,4 +47,16 @@ export const IMAGES = {
   campGroupBanner: campGroupBanner.url,
   campGroupPendopo: campGroupPendopo.url,
   campGroupSunny: campGroupSunny.url,
+  campBasketFloral: campBasketFloral.url,
+  campCreativeWorkshop: campCreativeWorkshop.url,
+  campEnglishClass: campEnglishClass.url,
+  campFeedingTurtles: campFeedingTurtles.url,
+  campCookingClass: campCookingClass.url,
+  campStrawberryKiosk: campStrawberryKiosk.url,
+  campKitchenAprons: campKitchenAprons.url,
+  campPaintingHat: campPaintingHat.url,
+  campPaintingOutdoor: campPaintingOutdoor.url,
+  campBasketBamboo: campBasketBamboo.url,
+  campGroupWide: campGroupWide.url,
+  campGroupEntrance: campGroupEntrance.url,
 };
