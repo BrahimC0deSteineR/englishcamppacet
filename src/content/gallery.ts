@@ -8,6 +8,8 @@ export type GalleryItem = {
   alt: string;
   caption: string;
   category: GalleryCategory;
+  /** Display shape. Wide group photos use "16/9" so nobody is cut off. */
+  ratio?: "4/3" | "3/4" | "16/9";
 };
 
 /** Add, remove or reorder photos here. Temporary images until real photos are provided. */
@@ -17,6 +19,13 @@ export const GALLERY: GalleryItem[] = [
     alt: "Students practising English conversation in an open-air classroom with mountain views",
     caption: "Conversation practice in our open-air classroom",
     category: "Classroom",
+  },
+  {
+    src: IMAGES.campGroupPendopo,
+    alt: "Children and instructors posing with the English & Cultural Camp banner on the lawn in front of a traditional Javanese meeting hall, with mountains behind",
+    caption: "Camp group photo in front of the pendopo",
+    category: "Events",
+    ratio: "16/9",
   },
   {
     src: IMAGES.activityOutdoor,

@@ -4,6 +4,12 @@ import { ChevronLeft, ChevronRight, X, Expand } from "lucide-react";
 import { GALLERY_CATEGORIES, type GalleryItem } from "@/content/gallery";
 import { cn } from "@/lib/utils";
 
+const RATIO = {
+  "4/3": { cls: "aspect-[4/3]", w: 1200, h: 900 },
+  "3/4": { cls: "aspect-[3/4]", w: 900, h: 1200 },
+  "16/9": { cls: "aspect-[16/9]", w: 1600, h: 900 },
+} as const;
+
 export function GalleryGrid({
   items,
   showFilters = true,
@@ -63,7 +69,9 @@ export function GalleryGrid({
       )}
 
       <ul className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>li]:mb-4">
-        {visible.map((item, i) => (
+        {visible.map((item, i) => {
+          const r = RATIO[item.ratio ?? (i % 3 === 1 ? "3/4" : "4/3")];
+          return (
           <li key={item.src + i} className="reveal break-inside-avoid">
             <button
               type="button"
@@ -75,11 +83,11 @@ export function GalleryGrid({
                 src={item.src}
                 alt={item.alt}
                 loading="lazy"
-                width={1200}
-                height={912}
+                width={r.w}
+                height={r.h}
                 className={cn(
                   "w-full object-cover transition-transform duration-700 group-hover:scale-105",
-                  i % 3 === 1 ? "aspect-[3/4]" : "aspect-[4/3]",
+                  r.cls,
                 )}
               />
               <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 bg-gradient-to-t from-navy-deep/80 to-transparent p-4 pt-12 text-primary-foreground opacity-100 transition-opacity sm:opacity-0 sm:group-hover:opacity-100">
@@ -93,7 +101,8 @@ export function GalleryGrid({
               </span>
             </button>
           </li>
-        ))}
+          );
+        })}
       </ul>
 
       <DialogPrimitive.Root open={index !== null} onOpenChange={(o) => !o && setIndex(null)}>
