@@ -130,11 +130,11 @@ function Hero() {
           </ul>
         </div>
 
-        <div className="rise-in relative [animation-delay:150ms]">
+        <div className="bleed-right rise-in relative [animation-delay:150ms]">
           <div aria-hidden className="absolute -left-6 top-10 -z-0 hidden size-28 rounded-full bg-accent lg:block" />
           <div
             aria-hidden
-            className="absolute -bottom-6 -right-6 h-2/3 w-2/3 rounded-4xl bg-sky"
+            className="absolute -bottom-6 right-0 h-2/3 w-2/3 rounded-l-4xl bg-sky"
           />
           <img
             src={IMAGES.campGroupBanner}
@@ -142,7 +142,7 @@ function Hero() {
             width={1831}
             height={859}
             fetchPriority="high"
-            className="relative aspect-[16/9] w-full rounded-4xl object-cover shadow-lift"
+            className="relative aspect-[16/9] w-full rounded-l-4xl rounded-r-none object-cover shadow-lift"
           />
           <div className="absolute -bottom-5 left-5 flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-lift sm:left-8">
             <span className="grid size-10 place-items-center rounded-xl bg-primary font-display text-lg text-primary-foreground">

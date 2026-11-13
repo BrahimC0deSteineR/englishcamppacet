@@ -190,6 +190,14 @@
   }
 }
 
+/* Runs a full-bleed element out to the right viewport edge, past the page container padding */
+@utility bleed-right {
+  margin-right: calc(-1 * ((100vw - min(100vw, 80rem)) / 2 + 1.25rem));
+  @media (width >= 48rem) {
+    margin-right: calc(-1 * ((100vw - min(100vw, 80rem)) / 2 + 2rem));
+  }
+}
+
 @utility section-y {
   padding-block: 4.5rem;
   @media (width >= 64rem) {
