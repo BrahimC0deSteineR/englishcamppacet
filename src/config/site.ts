@@ -44,7 +44,6 @@ export const NAV_LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
   { to: "/programs", label: "Programs" },
-  { to: "/teachers", label: "Teachers" },
   { to: "/gallery", label: "Gallery" },
   { to: "/news", label: "News & Events" },
   { to: "/admissions", label: "Admissions" },

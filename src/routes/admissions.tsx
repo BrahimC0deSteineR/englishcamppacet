@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FileText } from "lucide-react";
 import { z } from "zod";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { PageHeader, PlaceholderNote, SectionHeading } from "@/components/site/Section";
+import { PageHeader, SectionHeading } from "@/components/site/Section";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { ADMISSION_STEPS, FAQS, REQUIRED_DOCUMENTS } from "@/content/school";
@@ -86,9 +86,6 @@ function AdmissionsPage() {
               <h3 className="flex items-center gap-2 text-xl font-medium text-primary">
                 <FileText className="size-5 text-accent" /> Required documents
               </h3>
-              <div className="mt-3">
-                <PlaceholderNote>To be confirmed by the school</PlaceholderNote>
-              </div>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 {REQUIRED_DOCUMENTS.map((d) => (
                   <li key={d} className="flex gap-3">

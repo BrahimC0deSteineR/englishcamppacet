@@ -98,11 +98,3 @@ export function PageHeader({
   );
 }
 
-export function PlaceholderNote({ children }: { children: ReactNode }) {
-  return (
-    <p className="inline-flex items-center gap-2 rounded-full border border-dashed border-primary/25 bg-background px-3 py-1 text-xs font-medium text-muted-foreground">
-      <span aria-hidden className="size-1.5 rounded-full bg-accent" />
-      {children}
-    </p>
-  );
-}

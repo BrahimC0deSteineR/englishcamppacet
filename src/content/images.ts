@@ -10,9 +10,6 @@ import activityCampfire from "@/assets/activity-campfire.jpg";
 import activityGroup from "@/assets/activity-group.jpg";
 import facilityLibrary from "@/assets/facility-library.jpg";
 import facilityCampus from "@/assets/facility-campus.jpg";
-import teacher1 from "@/assets/teacher-1.jpg";
-import teacher2 from "@/assets/teacher-2.jpg";
-import teacher3 from "@/assets/teacher-3.jpg";
 // Real camp photos (CDN-hosted).
 import campGroupBanner from "@/assets/camp-group-banner.jpg.asset.json";
 import campGroupPendopo from "@/assets/camp-group-pendopo.jpg.asset.json";
@@ -48,9 +45,6 @@ export const IMAGES = {
   activityGroup,
   facilityLibrary,
   facilityCampus,
-  teacher1,
-  teacher2,
-  teacher3,
   campGroupBanner: campGroupBanner.url,
   campGroupPendopo: campGroupPendopo.url,
   campGroupSunny: campGroupSunny.url,

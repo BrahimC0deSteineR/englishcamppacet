@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/config/site";
 import { NEWS } from "@/content/news";
 
-const STATIC_PATHS = ["/", "/about", "/programs", "/teachers", "/gallery", "/news", "/admissions", "/contact"];
+const STATIC_PATHS = ["/", "/about", "/programs", "/gallery", "/news", "/admissions", "/contact"];
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {

@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { IMAGES } from "./images";
 
-/** Editable school copy. Text in [brackets] is a placeholder awaiting confirmation. */
+/** Editable school copy. */
 
 export const INTRO = {
   title: "A friendly place to learn English in the highlands of Pacet",
@@ -19,12 +19,12 @@ export const INTRO = {
 };
 
 export const HISTORY = [
-  "[School history placeholder] Share how English Camp started, who founded it and what inspired the school.",
-  "[Milestones placeholder] Add key moments — for example when the school opened, new programs or community projects.",
+  "English Camp was born in the green highlands of Pacet, where cool mountain air and warm village life make the perfect setting to learn. What started as a small camp-style class grew into a learning centre where children, teens and adults practise English through games, art, cooking and outdoor adventure.",
+  "Today our camps bring together English learning and Javanese culture — from painting woven baskets and cooking in a traditional kitchen to feeding turtles and performing talent shows under the stars.",
 ];
 
 export const VISION =
-  "[Vision placeholder] To become a trusted English learning community in Pacet where every learner gains the confidence to communicate and explore new opportunities.";
+  "To become a trusted English learning community in Pacet where every learner gains the confidence to communicate and explore new opportunities.";
 
 export const MISSION = [
   "Provide English learning that is practical, active and enjoyable",
@@ -115,7 +115,7 @@ export const FACILITIES = [
   },
 ];
 
-export const STATS_NOTE = "[Add verified numbers such as students taught or years of experience]";
+
 
 export const ADMISSION_STEPS = [
   {
@@ -141,10 +141,10 @@ export const ADMISSION_STEPS = [
 ];
 
 export const REQUIRED_DOCUMENTS = [
-  "[Placeholder] Completed registration form",
-  "[Placeholder] Copy of student ID or birth certificate",
-  "[Placeholder] Recent passport-size photo",
-  "[Placeholder] Parent or guardian contact details",
+  "Completed registration form",
+  "Copy of student ID or birth certificate",
+  "Recent passport-size photo",
+  "Parent or guardian contact details",
 ];
 
 export const FAQS = [

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Mail, MapPin } from "lucide-react";
-import { PageHeader, PlaceholderNote } from "@/components/site/Section";
+import { PageHeader } from "@/components/site/Section";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { SocialLinks } from "@/components/site/SocialLinks";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
@@ -37,11 +37,7 @@ function ContactPage() {
       <section className="container-page section-y grid gap-10 lg:grid-cols-[1fr_1.3fr]">
         <div className="space-y-4">
           <ContactCard icon={<WhatsAppIcon className="size-5" />} title="WhatsApp">
-            {SITE.whatsappNumber ? (
-              <span>{SITE.phoneDisplay}</span>
-            ) : (
-              <PlaceholderNote>Number to be added</PlaceholderNote>
-            )}
+            <span>{SITE.phoneDisplay}</span>
           </ContactCard>
           <ContactCard icon={<MapPin className="size-5" />} title="Address">
             <address className="not-italic">{FULL_ADDRESS}</address>
@@ -53,11 +49,11 @@ function ContactPage() {
                 {SITE.email}
               </a>
             ) : (
-              <PlaceholderNote>Email address to be added</PlaceholderNote>
+              <span>Reach us on WhatsApp — we reply quickly.</span>
             )}
           </ContactCard>
           <ContactCard icon={<Clock className="size-5" />} title="Opening hours">
-            {SITE.openingHours || <PlaceholderNote>Opening hours to be added</PlaceholderNote>}
+            {SITE.openingHours}
           </ContactCard>
           <div className="reveal rounded-3xl border border-border bg-card p-6">
             <p className="font-semibold text-primary">Follow us</p>

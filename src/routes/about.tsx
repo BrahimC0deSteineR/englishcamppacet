@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
-import { PageHeader, SectionHeading, PlaceholderNote } from "@/components/site/Section";
+import { PageHeader, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { IMAGES } from "@/content/images";
 import { DIFFERENTIATORS, FACILITIES, HISTORY, MISSION, PHILOSOPHY, VISION } from "@/content/school";
@@ -37,7 +37,6 @@ function AboutPage() {
       <section className="container-page section-y grid gap-12 lg:grid-cols-[1fr_1.3fr]">
         <SectionHeading eyebrow="Our story" title="How English Camp began" />
         <div className="reveal space-y-5 text-lg leading-relaxed text-muted-foreground">
-          <PlaceholderNote>History to be provided by the school</PlaceholderNote>
           {HISTORY.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
