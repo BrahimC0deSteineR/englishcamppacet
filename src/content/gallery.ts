@@ -45,4 +45,9 @@ export const GALLERY: GalleryItem[] = [
   { src: IMAGES.campTomatoGarden, alt: "Students walking through rows of tomato plants on a field trip", caption: "Field trip to the tomato garden", category: "Outdoor", ratio: "16/9" },
   { src: IMAGES.campTotebagPainting, alt: "Children painting strawberry designs on tote bags", caption: "Painting our own tote bags", category: "Art & Culture", ratio: "16/9" },
   { src: IMAGES.campTeamCircle, alt: "A large team-building circle in the park during an outbound session", caption: "Team-building circle", category: "Events", ratio: "16/9" },
+  { src: IMAGES.campRiverSplash, alt: "Laughing children splashing in a shallow forest stream", caption: "Splashing fun in the stream", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campCircleGame, alt: "Young children holding hands in a big circle game on the grass with mountains behind", caption: "Circle games on the grass", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campCookingDemo, alt: "Children watching an outdoor cooking demonstration with a steaming wok", caption: "Outdoor cooking demonstration", category: "Cooking", ratio: "3/4" },
+  { src: IMAGES.campGroupMountain, alt: "Large group of campers in orange shirts posing with a mountain backdrop", caption: "Camp friends in front of the mountain", category: "Events", ratio: "16/9" },
+  { src: IMAGES.campGardeningClass, alt: "Children in green uniforms learning about strawberry plants at Pondok Strawberry", caption: "Gardening class at Pondok Strawberry", category: "Outdoor" },
 ];

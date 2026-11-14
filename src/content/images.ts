@@ -43,6 +43,11 @@ import campPlantingWorkshop from "@/assets/camp-planting-workshop.webp.asset.jso
 import campTomatoGarden from "@/assets/camp-tomato-garden.webp.asset.json";
 import campTotebagPainting from "@/assets/camp-totebag-painting.webp.asset.json";
 import campTeamCircle from "@/assets/camp-team-circle.webp.asset.json";
+import campRiverSplash from "@/assets/camp-river-splash.webp.asset.json";
+import campCircleGame from "@/assets/camp-circle-game.png.asset.json";
+import campCookingDemo from "@/assets/camp-cooking-demo.webp.asset.json";
+import campGroupMountain from "@/assets/camp-group-mountain.png.asset.json";
+import campGardeningClass from "@/assets/camp-gardening-class.webp.asset.json";
 
 export const IMAGES = {
   heroStudents,
@@ -87,4 +92,9 @@ export const IMAGES = {
   campTomatoGarden: campTomatoGarden.url,
   campTotebagPainting: campTotebagPainting.url,
   campTeamCircle: campTeamCircle.url,
+  campRiverSplash: campRiverSplash.url,
+  campCircleGame: campCircleGame.url,
+  campCookingDemo: campCookingDemo.url,
+  campGroupMountain: campGroupMountain.url,
+  campGardeningClass: campGardeningClass.url,
 };
