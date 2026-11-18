@@ -50,4 +50,10 @@ export const GALLERY: GalleryItem[] = [
   { src: IMAGES.campCookingDemo, alt: "Children watching an outdoor cooking demonstration with a steaming wok", caption: "Outdoor cooking demonstration", category: "Cooking", ratio: "3/4" },
   { src: IMAGES.campGroupMountain, alt: "Large group of campers in orange shirts posing with a mountain backdrop", caption: "Camp friends in front of the mountain", category: "Events", ratio: "16/9" },
   { src: IMAGES.campGardeningClass, alt: "Children in green uniforms learning about strawberry plants at Pondok Strawberry", caption: "Gardening class at Pondok Strawberry", category: "Outdoor" },
+  { src: IMAGES.campBlindfoldGame, alt: "Blindfolded children guiding each other in a team game on the grass", caption: "Blindfold team challenge", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campStagePerformance, alt: "Children in leaf costumes performing together on stage", caption: "Stage performance in costume", category: "Events", ratio: "16/9" },
+  { src: IMAGES.campRiverTubing, alt: "A child in an orange life jacket floating on a river tube", caption: "River tubing adventure", category: "Outdoor" },
+  { src: IMAGES.campGoatFarm, alt: "Children in yellow uniforms visiting goats at a farm", caption: "Visiting the goat farm", category: "Outdoor", ratio: "3/4" },
+  { src: IMAGES.campRopeBridge, alt: "Children in yellow hats crossing a rope bridge at the playground", caption: "Crossing the rope bridge", category: "Outdoor", ratio: "3/4" },
+  { src: IMAGES.campTomatoPicking, alt: "Children picking tomatoes among the plants", caption: "Picking fresh tomatoes", category: "Outdoor", ratio: "3/4" },
 ];
