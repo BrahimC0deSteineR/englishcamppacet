@@ -62,4 +62,7 @@ export const GALLERY: GalleryItem[] = [
   { src: IMAGES.campTomatoGardenKids, alt: "Young children in yellow and red uniforms walking through the tomato garden", caption: "Exploring the tomato garden", category: "Outdoor", ratio: "3/4" },
   { src: IMAGES.campFlyingfoxLanding, alt: "A smiling child in a red helmet landing from the flying fox", caption: "Happy landing on the flying fox", category: "Outdoor", ratio: "3/4" },
   { src: IMAGES.campLeafCrowns, alt: "Children wearing crowns made of leaves at a nature-themed event", caption: "Nature parade with leaf crowns", category: "Events", ratio: "3/4" },
+  { src: IMAGES.campGlassPainting, alt: "A young girl carefully painting a glass outdoors", caption: "Painting glass in the garden", category: "Art & Culture", ratio: "3/4" },
+  { src: IMAGES.campGrassArt, alt: "Two girls making art on paper on the grass", caption: "Art time on the grass", category: "Art & Culture", ratio: "16/9" },
+  { src: IMAGES.campCrownFitting, alt: "A teacher fitting a crown of leaves and jasmine flowers on a child", caption: "Getting ready for the nature parade", category: "Events", ratio: "16/9" },
 ];

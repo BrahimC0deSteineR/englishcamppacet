@@ -60,6 +60,9 @@ import campStrawberryLesson from "@/assets/camp-strawberry-lesson.jpg.asset.json
 import campTomatoGardenKids from "@/assets/camp-tomato-garden-kids.jpg.asset.json";
 import campFlyingfoxLanding from "@/assets/camp-flyingfox-landing.jpg.asset.json";
 import campLeafCrowns from "@/assets/camp-leaf-crowns.jpg.asset.json";
+import campGlassPainting from "@/assets/camp-glass-painting.jpg.asset.json";
+import campGrassArt from "@/assets/camp-grass-art.jpg.asset.json";
+import campCrownFitting from "@/assets/camp-crown-fitting.jpg.asset.json";
 
 export const IMAGES = {
   heroStudents,
@@ -121,4 +124,7 @@ export const IMAGES = {
   campTomatoGardenKids: campTomatoGardenKids.url,
   campFlyingfoxLanding: campFlyingfoxLanding.url,
   campLeafCrowns: campLeafCrowns.url,
+  campGlassPainting: campGlassPainting.url,
+  campGrassArt: campGrassArt.url,
+  campCrownFitting: campCrownFitting.url,
 };
