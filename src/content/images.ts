@@ -54,6 +54,12 @@ import campRiverTubing from "@/assets/camp-river-tubing.jpg.asset.json";
 import campGoatFarm from "@/assets/camp-goat-farm.jpg.asset.json";
 import campRopeBridge from "@/assets/camp-rope-bridge.jpg.asset.json";
 import campTomatoPicking from "@/assets/camp-tomato-picking.jpg.asset.json";
+import campVegetableHarvest from "@/assets/camp-vegetable-harvest.jpg.asset.json";
+import campForestRopeCourse from "@/assets/camp-forest-rope-course.jpg.asset.json";
+import campStrawberryLesson from "@/assets/camp-strawberry-lesson.jpg.asset.json";
+import campTomatoGardenKids from "@/assets/camp-tomato-garden-kids.jpg.asset.json";
+import campFlyingfoxLanding from "@/assets/camp-flyingfox-landing.jpg.asset.json";
+import campLeafCrowns from "@/assets/camp-leaf-crowns.jpg.asset.json";
 
 export const IMAGES = {
   heroStudents,
@@ -109,4 +115,10 @@ export const IMAGES = {
   campGoatFarm: campGoatFarm.url,
   campRopeBridge: campRopeBridge.url,
   campTomatoPicking: campTomatoPicking.url,
+  campVegetableHarvest: campVegetableHarvest.url,
+  campForestRopeCourse: campForestRopeCourse.url,
+  campStrawberryLesson: campStrawberryLesson.url,
+  campTomatoGardenKids: campTomatoGardenKids.url,
+  campFlyingfoxLanding: campFlyingfoxLanding.url,
+  campLeafCrowns: campLeafCrowns.url,
 };

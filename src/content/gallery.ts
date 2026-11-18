@@ -56,4 +56,10 @@ export const GALLERY: GalleryItem[] = [
   { src: IMAGES.campGoatFarm, alt: "Children in yellow uniforms visiting goats at a farm", caption: "Visiting the goat farm", category: "Outdoor", ratio: "3/4" },
   { src: IMAGES.campRopeBridge, alt: "Children in yellow hats crossing a rope bridge at the playground", caption: "Crossing the rope bridge", category: "Outdoor", ratio: "3/4" },
   { src: IMAGES.campTomatoPicking, alt: "Children picking tomatoes among the plants", caption: "Picking fresh tomatoes", category: "Outdoor", ratio: "3/4" },
+  { src: IMAGES.campVegetableHarvest, alt: "Students and teachers harvesting corn and vegetables in a mountain garden", caption: "Harvest day in the vegetable garden", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campForestRopeCourse, alt: "Children crossing a rope bridge course between pine trees", caption: "Rope course in the pine forest", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campStrawberryLesson, alt: "Children in yellow headscarves learning about strawberry plants with their teachers", caption: "Strawberry garden lesson", category: "Outdoor", ratio: "16/9" },
+  { src: IMAGES.campTomatoGardenKids, alt: "Young children in yellow and red uniforms walking through the tomato garden", caption: "Exploring the tomato garden", category: "Outdoor", ratio: "3/4" },
+  { src: IMAGES.campFlyingfoxLanding, alt: "A smiling child in a red helmet landing from the flying fox", caption: "Happy landing on the flying fox", category: "Outdoor", ratio: "3/4" },
+  { src: IMAGES.campLeafCrowns, alt: "Children wearing crowns made of leaves at a nature-themed event", caption: "Nature parade with leaf crowns", category: "Events", ratio: "3/4" },
 ];
